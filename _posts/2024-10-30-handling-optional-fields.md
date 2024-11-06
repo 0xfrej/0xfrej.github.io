@@ -277,3 +277,11 @@ Symfony serializer component to allow hydration of fields using this class. For 
 So far I used this approach in limited amount within my current workplace and it was pretty useful. Unfortunately we didn't have time to properly refactor
 the biggest source of headaches, which is a feed processor consuming incremental product updates of a very massive XML structure, which was also the main 
 driver to do this. However I believe that somebody, can use this idea to help them overcome some hurdles of dealing with partial hydratations of large structures.
+
+## Alternative projects
+After writing this article I discovered [php-option](https://github.com/schmittjoh/php-option/tree/master) package that I didn't know about previously.
+Motivation and the library tries to solve essentially almost the same surface as I do. Some aspects of our APIs are different and the library has some nice ideas,
+which I might incorporate into my version. 
+
+However I plan to continue to work on my library, integrate it into symfony serializer and improve on the ergonomics further (current version is very heavily
+derived from Rust and still needs some polishing).
